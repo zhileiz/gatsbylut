@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+require("prismjs/themes/prism.css");
+require(`katex/dist/katex.min.css`)
+
 export default class PostPage extends Component {
   render() {
     const {data} = this.props;

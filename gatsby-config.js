@@ -20,8 +20,37 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: null,
+              aliases: {},
+            },
+          },
+          `gatsby-remark-katex`,
+          {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `20`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 500,
+              showCaptions: true,
+              linkImagesToOriginal: false
+            },
+          },
+        ],
+      },
+    },
     `gatsby-plugin-styled-components`
   ],
 }
