@@ -1,0 +1,70 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-0fac80164bb99266c199.js",
+      "component---src-pages-index-js-0fac80164bb99266c199.js.map"
+    ],
+    "path---": [
+      "path----380230d214b2d139f2af.js",
+      "path----380230d214b2d139f2af.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-3c293637057f9efe29fd.js",
+      "component---src-pages-contact-js-3c293637057f9efe29fd.js.map"
+    ],
+    "component---src-posts-post-js": [
+      "component---src-posts-post-js-a94616518ff9a11cfca9.js",
+      "component---src-posts-post-js-a94616518ff9a11cfca9.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-8a54161d07aa56d9d831.js",
+      "component---src-layouts-index-js-8a54161d07aa56d9d831.js.map"
+    ],
+    "path---index": [
+      "path---index-11e8cacfbfaaf8b02dc8.js",
+      "path---index-11e8cacfbfaaf8b02dc8.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "path---posts-second": [
+      "path---posts-second-79e0b876a772553c4162.js",
+      "path---posts-second-79e0b876a772553c4162.js.map"
+    ],
+    "commons": [
+      "commons-512ca5ce87838b4470c0.js",
+      "commons-512ca5ce87838b4470c0.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---posts-tester": [
+      "path---posts-tester-af0828f5b9564f1ea41a.js",
+      "path---posts-tester-af0828f5b9564f1ea41a.js.map"
+    ],
+    "app": [
+      "app-74dba02cd745cd60bea0.js",
+      "build-js-styles.css",
+      "app-74dba02cd745cd60bea0.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-46b72acc6ec16edbb65e.js",
+      "component---src-pages-about-js-46b72acc6ec16edbb65e.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
