@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 const PostListing = ({post}) => (
   <div>
-    <Link to={post.fields.slug}>
+    <Link to={post.frontmatter.link}>
       <h3>{post.frontmatter.title}</h3>
     </Link>
     <p>{post.frontmatter.summary}</p>
@@ -37,10 +37,8 @@ export const query = graphql`
     allMarkdownRemark {
       edges {
         node {
-          fields {
-            slug
-          }
           frontmatter {
+            link
             title
             date
             summary

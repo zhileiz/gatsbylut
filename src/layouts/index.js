@@ -14,7 +14,7 @@ const Layout = ({ children, data, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} background={data.background} location={location} />
+    {/* <Header siteTitle={data.site.siteMetadata.title} background={data.background} location={location} /> */}
     <div
       style={{
         margin: '0 auto',

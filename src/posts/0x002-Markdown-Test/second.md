@@ -2,6 +2,7 @@
 title: "A Markdown Testing File"
 date: "2018-08-22"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
+link: "0x002-markdown-testing"
 summary: "A Markdown-formatted
 document should be publishable as-is, as plain text, without looking
 like it's been marked up with tags or formatting instructions. While

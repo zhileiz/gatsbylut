@@ -16,11 +16,20 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: "posts",
+        name: "blog",
         path: `${__dirname}/src/posts`
       }
     },
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Chivo`,
+          `Muli`
+        ]
+      }
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -43,7 +52,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 500,
+              maxWidth: 900,
               showCaptions: true,
               linkImagesToOriginal: false
             },
