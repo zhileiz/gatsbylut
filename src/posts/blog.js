@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 require("prismjs/themes/prism.css");
 require(`katex/dist/katex.min.css`)
@@ -77,13 +78,15 @@ export default class PostPage extends Component {
   render() {
     const {data} = this.props;
     return (
-      <div style={{textAlign: 'center'}}>
-        <Title>{data.markdownRemark.frontmatter.title}</Title>
-        <MetaInfo>
-          <h5>Updated at {data.markdownRemark.frontmatter.date}</h5>
-        </MetaInfo>
-        <Markdown dangerouslySetInnerHTML = {{__html: data.markdownRemark.html}}></Markdown>
-        <EndLine></EndLine>
+      <div style={{maxWidth: '1024px', margin: 'auto'}}>
+        <div style= {{textAlign: 'center', width: '90%', margin: 'auto'}}>
+          <Title>{data.markdownRemark.frontmatter.title}</Title>
+          <MetaInfo>
+            <h5>Updated at {data.markdownRemark.frontmatter.date}</h5>
+          </MetaInfo>
+          <Markdown dangerouslySetInnerHTML = {{__html: data.markdownRemark.html}}></Markdown>
+          <EndLine></EndLine>
+        </div>
       </div>
     )
   }

@@ -1,27 +1,52 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-const PostListing = ({post}) => (
-  <div>
-    <Link to={post.frontmatter.link}>
-      <h3>{post.frontmatter.title}</h3>
-    </Link>
-    <p>{post.frontmatter.summary}</p>
-  </div>
-)
+import PostItem from '../components/postItem'
+import Sidebar from '../components/sidebar'
+
+const ContentDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+`;
+
+const MainDiv = styled.div`
+  width: 70%;
+`;
+
+const ContainerDiv = styled.div`
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+`;
 
 const IndexPage = ({data}) => (
-  <div>
-    <h1>Hi people</h1>
-    <p>{data.site.siteMetadata.desc}</p>
-    <p>Now go build something great.</p>
-    <Link to="/about/">Go to About</Link>
-    <div>
-      {data.allMarkdownRemark.edges.map(({node}) => {
-        return <PostListing post={node}/>
-      })}
-    </div>
-  </div>
+  <ContentDiv>
+    <Sidebar info={data}/>
+    <MainDiv>
+      <ContainerDiv>
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+        {data.allMarkdownRemark.edges.map(({node}) => {
+          return <PostItem post={node}/>
+        })}
+      </ContainerDiv>
+    </MainDiv>
+  </ContentDiv>
 )
 
 export default IndexPage
@@ -40,11 +65,17 @@ export const query = graphql`
           frontmatter {
             link
             title
-            date
+            category
+            date(formatString: "MMMM DD, YYYY")
             summary
             subtitle
           }
         }
+      }
+    }
+    avatar: imageSharp(id: {regex: "/photo.jpg/"}) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

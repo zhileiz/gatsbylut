@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'TutsBlog',
+    title: 'Zhilei Zheng',
     desc: "ZhileiZ's implementation of LevelUpTuts ProGatsby Series"
   },
   plugins: [
@@ -53,8 +53,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 900,
-              showCaptions: true,
-              linkImagesToOriginal: false
             },
           },
         ],
