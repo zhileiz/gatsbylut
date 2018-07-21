@@ -7,7 +7,7 @@ import Sidebar from '../components/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
-const IndexPage = ({data}) => (
+const AboutPage = ({data}) => (
   <ContentDiv>
     <Sidebar info={data}/>
     <MainDiv>
@@ -22,7 +22,7 @@ const IndexPage = ({data}) => (
   </ContentDiv>
 )
 
-export default IndexPage
+export default AboutPage
 
 export const query = graphql`
   query aboutQuery {
