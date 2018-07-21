@@ -94,9 +94,9 @@ const Sidebar = ({info}) => (
         <Link><IconWrapper><Icon src={linkedin} atl="github" /></IconWrapper></Link>
       </IconGroup>
       <Menu>
-        <MenuItem><Link to = '/about'>About</Link></MenuItem>
+        <MenuItem><Link to = '/'>Blog</Link></MenuItem>
+        <MenuItem><Link to = '/about'>About Me</Link></MenuItem>
         <MenuItem><Link to = '/contact'>Contact</Link></MenuItem>
-        <MenuItem><Link to = '/about'>About</Link></MenuItem>
       </Menu>
     </ContainerDiv>
   </OuterDiv>

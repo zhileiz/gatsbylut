@@ -1,11 +1,39 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Link from 'gatsby-link'
+import styled from 'styled-components'
 
-export default class ContactPage extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Contact</h1>
-      </div>
-    )
+import PostItem from '../components/postItem'
+import Sidebar from '../components/sidebar'
+
+import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
+
+const ContactPage = ({data}) => (
+  <ContentDiv>
+    <Sidebar info={data}/>
+    <MainDiv>
+      <ContainerDiv>
+        <div>
+          <h1>Contact</h1>
+        </div>
+      </ContainerDiv>
+    </MainDiv>
+  </ContentDiv>
+)
+
+export default ContactPage
+
+export const query = graphql`
+  query contactQuery {
+    site {
+      siteMetadata {
+        title,
+        desc
+      }
+    }
+    avatar: imageSharp(id: {regex: "/photo.jpg/"}) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
+    }
   }
-}
+`

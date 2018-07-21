@@ -5,42 +5,13 @@ import styled from 'styled-components'
 import PostItem from '../components/postItem'
 import Sidebar from '../components/sidebar'
 
-const ContentDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-`;
-
-const MainDiv = styled.div`
-  width: 70%;
-`;
-
-const ContainerDiv = styled.div`
-  width: 80%;
-  margin: auto;
-  margin-top: 50px;
-`;
+import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const IndexPage = ({data}) => (
   <ContentDiv>
     <Sidebar info={data}/>
     <MainDiv>
       <ContainerDiv>
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
-        })}
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
-        })}
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
-        })}
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
-        })}
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
-        })}
         {data.allMarkdownRemark.edges.map(({node}) => {
           return <PostItem post={node}/>
         })}

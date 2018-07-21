@@ -23,6 +23,12 @@ const Excerpt = styled.div`
     font-family: 'Muli';
     font-size: 15px;
   }
+  a {
+    font-family: 'Muli';
+    font-size: 15px;
+    color: black;
+    font-weight: 900;
+  }
 `;
 
 const MetaArea = styled.div`
@@ -32,14 +38,11 @@ const MetaArea = styled.div`
   color: #666;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   img {
     margin: 0px;
     margin-right: 3px;
   }
-`
-
-const DateInfo = styled.div`
-  margin-left: 5px;
 `
 
 const CategoryInfo = styled.div`
@@ -54,16 +57,17 @@ const PostItem = ({post}) => (
       </Link>
     </Title>
     <MetaArea>
+      <div>
+        Updated at {post.frontmatter.date}
+      </div>
       <CategoryInfo>
         <img src={box} width="10"/>
         {post.frontmatter.category}
       </CategoryInfo>
-      <DateInfo>
-        <img src={pencil} width="10"/>
-        Updated at {post.frontmatter.date}
-      </DateInfo>
     </MetaArea>
-    <Excerpt><p>{post.frontmatter.summary}</p></Excerpt>
+    <Excerpt>
+      <p>{post.frontmatter.summary}<Link to={post.frontmatter.link}>MORE</Link></p>
+    </Excerpt>
   </div>
 )
 
