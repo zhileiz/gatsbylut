@@ -4,6 +4,8 @@ date: "2018-03-21"
 subtitle: "This is a subtitle"
 link: "0x003-swiftnio"
 category: "iOS"
+lang: 'english'
+published: false
 summary: "Mobile developers often work with REST APIs or other networking protocols in their applications — whether it’s to retrieve data, communicate with other devices, or something else. SwiftNEO, written by Apple, is a low-level networking framework that ..."
 ---
 Mobile developers often work with REST APIs or other networking protocols in their applications — whether it’s to retrieve data, communicate with other devices, or something else. [SwiftNEO](http://docutils.sourceforge.net/mirror/setext.html), written by Apple, is a low-level networking framework that makes writing Swift servers even easier than before, empowering Swift developers to leverage their skills on the server side.

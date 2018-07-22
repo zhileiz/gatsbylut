@@ -1,22 +1,24 @@
 ---
-title: "A Markdown Testing File"
+title: "这是一篇中文测试文章"
 date: "2018-08-22"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
-link: "0x002-markdown-testing"
+link: "0x004-chinese"
 category: "Misc"
-lang: 'english'
+lang: 'chinese'
 published: true
-summary: "A Markdown-formatted
-document should be publishable as-is, as plain text, without looking
-like it's been marked up with tags or formatting instructions. While
-Markdown's syntax has been influenced by ... "
+summary: "谈到移动端开发，大家心中肯定会涌现出一系列名词：iOS、Android、Weex，H5... 那为何还使用Flutter？其实，Flutter通过自建绘制引擎，具备与Native媲美的性能指数，且有很好的两端一致性，因此Flutter提供了一种新的可选项。闲鱼宝贝详情页实践上线也证明了这点，可以在性能无损前提下降低iOS&Android开发成本。"
 ---
-### Philosophy
+### Flutter框架简介
 
-![Default-aligned image](./salty_egg.jpg)
+![Default-aligned image](./flutter.jpeg)
 
 
-Markdown is intended to be as easy-to-read and easy-to-write as is feasible. We can even use $a + b + c = 10$. but the tradeoff is a higher line-height.
+跨平台应用的框架，没有使用WebView或者系统平台自带的控件，使用自身的高性能渲染引擎(Skia)自绘。
+
+界面开发语言使用dart，底层渲染引擎使用C, C++。
+
+组合大于继承，控件本身通常由许多小型、单用途的控件组成，结合起来产生强大的效果，类的层次结构是扁平的，以最大化可能的组合数量。
+
 $$
 a^2 + b^2 = c^2
 $$

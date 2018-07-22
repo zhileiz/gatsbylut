@@ -7,7 +7,7 @@ require("prismjs/themes/prism.css");
 require(`katex/dist/katex.min.css`)
 
 const Title = styled.h1`
-  font-family: "Chivo";
+  font-family: "Chivo", 'Hans';
   width: 100%;
   text-align: center;
   margin-top: 60px;
@@ -18,7 +18,7 @@ const MetaInfo = styled.div`
   text-align: center;
   display: inline-block;
   h5 {
-    font-family: "Muli";
+    font-family: "Muli", 'Hans';
     color: #999;
   }
 `
@@ -26,7 +26,7 @@ const MetaInfo = styled.div`
 const Markdown = styled.div`
   text-align: left;
   h1,h2,h3,h4,h5,h6 {
-    font-family: "Chivo";
+    font-family: "Chivo", 'Hans';
     margin-top: 1.45rem;
   }
   ul, ol {
@@ -36,7 +36,7 @@ const Markdown = styled.div`
     }
   }
   p, li {
-    font-family: "Muli";
+    font-family: "Muli", 'Hans';
     margin-bottom: 0.5rem;
     line-height: 1.5;
     a {
@@ -54,7 +54,7 @@ const Markdown = styled.div`
   blockquote {
     color: #999;
     p {
-      font-family: "Chivo";
+      font-family: "Chivo", 'Hans';
     }
     border-left: 3px solid #ccc;
     padding: 1rem;

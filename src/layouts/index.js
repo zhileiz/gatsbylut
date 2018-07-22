@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import PropTypes from 'prop-types'
 
-import Header from '../components/header'
 import './index.css'
 
 const Layout = ({ children, data, location }) => (
@@ -14,7 +13,6 @@ const Layout = ({ children, data, location }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    {/* <Header siteTitle={data.site.siteMetadata.title} background={data.background} location={location} /> */}
     <div
       style={{
         width: '100%',

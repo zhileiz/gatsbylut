@@ -50,7 +50,7 @@ const numberOfDaysSince = (date) => (
 
 const CounterDiv = styled.div`
     padding: 1.5rem;
-    font-family: "Chivo";
+    font-family: "Chivo", "Hans";
     text-align: center;
     width: 100%;
     background: #fff;

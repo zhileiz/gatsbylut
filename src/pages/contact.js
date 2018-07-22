@@ -9,7 +9,7 @@ import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const ContactPage = ({data}) => (
   <ContentDiv>
-    <Sidebar info={data}/>
+    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info}/>
     <MainDiv>
       <ContainerDiv>
         <div>
@@ -27,7 +27,17 @@ export const query = graphql`
     site {
       siteMetadata {
         title,
-        desc
+        desc,
+        info {
+          name
+          title
+          intro
+          links {
+            github
+            linkedin
+            email
+          }
+        }
       }
     }
     avatar: imageSharp(id: {regex: "/photo.jpg/"}) {

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import PostItem from '../components/postItem'
 import Sidebar from '../components/sidebar'
@@ -9,11 +10,11 @@ import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const IndexPage = ({data}) => (
   <ContentDiv>
-    <Sidebar info={data}/>
+    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} location={location}/>
     <MainDiv>
       <ContainerDiv>
-        {data.allMarkdownRemark.edges.map(({node}) => {
-          return <PostItem post={node}/>
+        {data.allMarkdownRemark.edges.map(({node}, i) => {
+          return <PostItem post={node} key={i}/>
         })}
       </ContainerDiv>
     </MainDiv>
@@ -27,10 +28,28 @@ export const query = graphql`
     site {
       siteMetadata {
         title,
-        desc
+        desc,
+        info {
+          name
+          title
+          intro
+          links {
+            github
+            linkedin
+            email
+          }
+        }
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark (
+      sort: { fields: [frontmatter___date], order: DESC}
+      filter: {
+        frontmatter: {
+          published: { eq: true }
+          lang: {eq: "english"}
+        }
+      }
+    ) {
       edges {
         node {
           frontmatter {

@@ -8,7 +8,7 @@ import pencil from '../images/pencil.svg'
 const Title = styled.div`
   a {
     h3 {
-      font-family: 'Chivo';
+      font-family: 'Chivo', 'Hans';
       font-size: 20px;
       margin: 0px;
     }
@@ -20,11 +20,11 @@ const Title = styled.div`
 
 const Excerpt = styled.div`
   p {
-    font-family: 'Muli';
+    font-family: 'Muli', 'Hans';
     font-size: 15px;
   }
   a {
-    font-family: 'Muli';
+    font-family: 'Muli', 'Hans';
     font-size: 15px;
     color: black;
     font-weight: 900;
@@ -33,7 +33,7 @@ const Excerpt = styled.div`
 
 const MetaArea = styled.div`
   margin-bottom: 5px;
-  font-family: 'Muli';
+  font-family: 'Muli', 'Hans';
   font-size: 13px;
   color: #666;
   display: flex;

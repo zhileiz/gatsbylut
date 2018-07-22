@@ -14,6 +14,6 @@ export const ContainerDiv = styled.div`
   width: 80%;
   margin: auto;
   margin-top: 50px;
-  font-family: 'Muli';
+  font-family: 'Muli', 'Hans';
   font-size: 15px;
 `;
