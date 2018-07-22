@@ -2,6 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Zhilei Zheng',
     desc: "Zhilei Zheng is a software engineer",
+    description: `A fantastic new static site generator.`,
+    siteUrl: `https://www.zhileiz.com/`,
     info: {
       name: 'Zhilei Zheng',
       title: 'Software Engineer',
@@ -85,6 +87,115 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.html,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.link,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.link,
+                });
+              });
+            },
+            query: `
+              {
+                site {
+                  siteMetadata {
+                    title
+                    description
+                    siteUrl
+                    site_url: siteUrl
+                  }
+                }
+                allMarkdownRemark(
+                  sort: {order: DESC, fields: [frontmatter___date]}, 
+                  filter: {
+                    frontmatter: {
+                      published: {eq: true}
+                      lang: {eq: "en"}
+                    }
+                  }) 
+                {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        date
+                        link
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+          },
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.html,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.link,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.link,
+                });
+              });
+            },
+            query: `
+              {
+                site {
+                  siteMetadata {
+                    title
+                    description
+                    siteUrl
+                    site_url: siteUrl
+                  }
+                }
+                allMarkdownRemark(
+                  sort: {order: DESC, fields: [frontmatter___date]}, 
+                  filter: {
+                    frontmatter: {
+                      published: {eq: true}
+                      lang: {eq: "ch"}
+                    }
+                  }) 
+                {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      frontmatter {
+                        title
+                        date
+                        link
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/ch-rss.xml",
+          },
+        ],
+      },
+    },
   ],
 }
