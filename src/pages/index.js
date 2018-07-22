@@ -10,7 +10,7 @@ import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const IndexPage = ({data}) => (
   <ContentDiv>
-    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} location={location}/>
+    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info}/>
     <MainDiv>
       <ContainerDiv>
         {data.allMarkdownRemark.edges.map(({node}, i) => {
