@@ -12,7 +12,7 @@ npm install --global gatsby-cli
 
 And run from your CLI:
 ```sh
-gatsby new gatsby-example-site
+gatsby new gatsby-starter-bpg
 ```
 
 Then you can run it by:

@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom'
 const MenuList = styled.div`
   margin-top: 40px;
 `
-
 const MenuListItem = styled.div`
   margin: 5px 0px;
   font-family: "Chivo", 'Hans';
@@ -15,12 +14,7 @@ const MenuListItem = styled.div`
     color: black;
   }
 `
-
 export default class Menu extends Component {
-
-  _handleClick(menuItem) { 
-    this.setState({ active: menuItem });
-  }
 
   render() {
 
@@ -28,31 +22,15 @@ export default class Menu extends Component {
     const currTab = this.props.activeTab;
 
     const pages = this.props.isCH ? [
-      '/ch',
-      '/about-ch',
-      '/projects-ch',
-      '/contact-ch',
-      '/',
+      '/ch', '/about-ch', '/projects-ch', '/contact-ch', '/',
     ] : [
-      '/',
-      '/about',
-      '/projects',
-      '/contact',
-      '/ch',   
+      '/', '/about', '/projects', '/contact', '/ch',   
     ];
 
     const pageNames = this.props.isCH ? [
-      '博客',
-      '关于我',
-      '项目',
-      '联系我',
-      'English'
+      '博客', '关于我', '项目', '联系我', 'English'
     ] : [
-      'Blog',
-      'About Me',
-      'Projects',
-      'Contact',
-      '中文'
+      'Blog', 'About Me', 'Projects', 'Contact', '中文'
     ];
 
     return (
