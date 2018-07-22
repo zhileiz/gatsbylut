@@ -19,15 +19,19 @@ export const ContainerDiv = styled.div`
 `;
 
 export const Title = styled.div`
+  font-size: 20px;
   margin-top: 20px;
   font-family: Chivo, 'Hans';
   font-weight: 900;
+  margin-bottom: 15px;
 `
 
 export const Subtitle = styled.div`
-  margin-top: 5px;
+  font-size: 15px;
   font-family: Chivo, 'Hans';
-  font-size: 16px;
+  a {
+    color: #666;
+  }
 `
 
 export const Intro = styled.div`

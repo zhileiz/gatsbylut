@@ -1,7 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
-import PropTypes from 'prop-types'
 
 import PostItem from '../components/postItem'
 import Sidebar from '../components/sidebar/sidebar'
@@ -32,11 +29,17 @@ export const query = graphql`
         info {
           name
           title
+          titleLink
+          titleLinkURL
+          title2
+          title2Link
+          title2LinkURL
           intro
           links {
             github
             linkedin
             email
+            rss
           }
         }
       }

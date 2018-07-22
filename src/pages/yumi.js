@@ -1,8 +1,6 @@
 import React from 'react'
 import {MasonryLayout, MasonryImg, MasonryCounter} from '../components/masonry'
 
-const today = 21;
-
 const GalleryPage = ({data}) => (
     <MasonryLayout>
         <MasonryCounter/>

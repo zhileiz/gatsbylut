@@ -1,10 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
 
-import PostItem from '../components/postItem'
 import Sidebar from '../components/sidebar/sidebar'
-
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const AboutCHPage = ({data}) => (
@@ -33,11 +29,17 @@ export const query = graphql`
         chInfo {
           name
           title
+          titleLink
+          titleLinkURL
+          title2
+          title2Link
+          title2LinkURL
           intro
           links {
             github
             linkedin
             email
+            rss
           }
         }
       }

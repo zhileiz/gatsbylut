@@ -12,22 +12,16 @@ const OuterDiv = styled.div`
   border-right: 1px solid #ccc;
 `;
 
-const ImgContainer = styled.div`
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-`
-
 export default class Sidebar extends Component {
   render() {
-    const {name, title, intro} = this.props.info;
+    const {name, title, titleLink, titleLinkURL, title2, title2Link, title2LinkURL, intro} = this.props.info;
     return (
       <OuterDiv>
         <ContainerDiv style={{marginTop: "0px"}}>
           <Avatar avatar = {this.props.avatar}/>
           <Title>{name}</Title>
-          <Subtitle>{title}</Subtitle>
+          <Subtitle>{title} <a href={titleLinkURL}>{titleLink}</a></Subtitle>
+          <Subtitle>{title2} <a href={title2LinkURL}>{title2Link}</a></Subtitle>
           <Intro>{intro}</Intro>
           <IconGroup links = {this.props.info.links}/>
           <Menu activeTab={this.props.activeTab} isCH={this.props.isCH}/>

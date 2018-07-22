@@ -9,6 +9,7 @@ const MenuList = styled.div`
 const MenuListItem = styled.div`
   margin: 5px 0px;
   font-family: "Chivo", 'Hans';
+  font-size: 15px;
   a {
     text-decoration: none;
     color: black;

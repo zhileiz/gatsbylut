@@ -1,10 +1,7 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
 import YouTube from 'react-youtube'
 
 import Sidebar from '../components/sidebar/sidebar'
-
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const opts = {
@@ -50,11 +47,17 @@ export const query = graphql`
         info {
           name
           title
+          titleLink
+          titleLinkURL
+          title2
+          title2Link
+          title2LinkURL
           intro
           links {
             github
             linkedin
             email
+            rss
           }
         }
       }

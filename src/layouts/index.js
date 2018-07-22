@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
 
 import './index.css'
+import favicon from './../images/favicon.ico'
 
 const Layout = ({ children, data, location }) => (
   <div>
@@ -12,7 +13,7 @@ const Layout = ({ children, data, location }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
+    ><link rel="icon" type="image/x-icon" href={favicon} /></Helmet>
     <div
       style={{
         width: '100%',

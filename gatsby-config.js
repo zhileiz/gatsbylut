@@ -6,22 +6,34 @@ module.exports = {
     siteUrl: `https://www.zhileiz.com/`,
     info: {
       name: 'Zhilei Zheng',
-      title: 'Software Engineer',
+      title: 'Junior',
+      titleLink: '@UPenn-NETS',
+      titleLinkURL: 'https://www.nets.upenn.edu/',
+      title2: 'Developer',
+      title2Link: '@Pennlabs',
+      title2LinkURL: 'https://pennlabs.org/',
       intro: "A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions. While Markdown's syntax has been influenced by several existing text-to-HTML filters.",
       links: {
         github: 'https://github.com/zhileiz',
         linkedin: 'https://github.com/zhileiz',
-        email: 'https://github.com/zhileiz'
+        email: 'https://github.com/zhileiz',
+        rss: 'https://zhileiz.com/rss.xml'
       }
     },
     chInfo: {
       name: '郑智镭',
-      title: '软件工程师',
+      title: '大三学生',
+      titleLink: '@UPenn-NETS',
+      titleLinkURL: 'https://www.nets.upenn.edu/',
+      title2: '开发者',
+      title2Link: '@Pennlabs',
+      title2LinkURL: 'https://pennlabs.org/',
       intro: "我知道的是阿里巴巴旗下的闲鱼技术团队。闲鱼是国内最早几个使用 Flutter 开发的 App。他们还写一组系列文章，介绍 Flutter 的使用感想和开发经验。",
       links: {
         github: 'https://github.com/zhileiz',
         linkedin: 'https://github.com/zhileiz',
-        email: 'https://github.com/zhileiz'
+        email: 'https://github.com/zhileiz',
+        rss: 'https://zhileiz.com/rss.xml'
       }
     }
   },
