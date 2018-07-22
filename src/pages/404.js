@@ -1,10 +1,22 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
+import YouTube from 'react-youtube'
 
 import Sidebar from '../components/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
+
+const opts = {
+  height: '390',
+  width: '640',
+  playerVars: { // https://developers.google.com/youtube/player_parameters
+    autoplay: 1,
+    loop: 1,
+    playlist: "Q3oItpVa9fs",
+    start: 44
+  }
+};
 
 const NotFoundPage = ({data}) => (
   <ContentDiv>
@@ -14,7 +26,13 @@ const NotFoundPage = ({data}) => (
         <div>
           <h1>404 Not Found!</h1>
           <p>This page is not ready yet / does not exist.<br/>
-          But you are welcomed to view this following video clip of <b>my cat</b>.</p>
+          But you are welcomed to view this awesome video clip of music and science by <b>CYMATICS from Stanford</b>.</p>
+          <YouTube
+            videoId="Q3oItpVa9fs"
+            playList="Q3oItpVa9fs"
+            loop={1}
+            opts={opts}
+          />
         </div>
       </ContainerDiv>
     </MainDiv>

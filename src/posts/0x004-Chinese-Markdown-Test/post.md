@@ -2,7 +2,7 @@
 title: "这是一篇中文测试文章"
 date: "2018-08-22"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
-link: "0x004-chinese"
+link: "0x004-chinese-markdown-test"
 category: "Misc"
 lang: 'ch'
 published: true
@@ -10,7 +10,7 @@ summary: "谈到移动端开发，大家心中肯定会涌现出一系列名词�
 ---
 ### Flutter框架简介
 
-![Default-aligned image](./flutter.jpeg)
+![Flutter](./01-flutter.jpg)
 
 
 跨平台应用的框架，没有使用WebView或者系统平台自带的控件，使用自身的高性能渲染引擎(Skia)自绘。

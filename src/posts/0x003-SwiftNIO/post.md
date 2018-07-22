@@ -32,19 +32,19 @@ However, these frameworks operate as a convenient layer on top of some sophistic
 BlueSocket is great, but it doesn’t fill in all the blanks when it comes to server-side Swift. For example, Kitura not only included the work of BlueSocket, but it also implemented the entire HTTP stack under the hood, so incoming communication would be routed the right way. Now, Apple has raised the bar, introducing [SwiftNEO](http://docutils.sourceforge.net/mirror/setext.html) and essentially handling socket communication and HTTP for us.
 > Note: SwiftNIO has been written as a port of Netty, a Java low-level networking framework, but in Swift.
 
-![Default-aligned image](./normansDiagram.jpg)
+![Default-aligned image](./01-normans-diagram.jpg)
 
 This tutorial won’t go into great detail about every piece of the above diagram but, as you work your way through, each piece should begin to make sense. However, it’s worth explaining what an [EventLoopGroup]() is and, thus, what a [MultiThreadedEventLoopGroup]() accomplishes with this class.
 #### EventLoopGroup and MultiThreadedEventLoopGroup
 An [EventLoop]() runs in a loop, looking for new tasks to handle that have come in from a new client via a network connection. Think of an EventLoop like a serial [DispatchQueue](), which allows you to delegate blocks of code for execution at a time of your choosing. As multiple EventLoop instances cycle through your thread, they look for tasks to execute.
 
-![Default-aligned image](./runLoop-1.jpg)
+![Default-aligned image](./02-runloop.jpg)
 
 When you put these EventLoop instances into an EventLoopGroup, the handler looks more like a concurrent DispatchQueue. You can also think of this like a thread pool. This means you can submit multiple tasks to the group and, depending on the time it takes to complete each task, the order of completed tasks may not be what you initially submitted to the group.
 
 This is where the **MultiThreadedEventLoopGroup** class comes in. This specifies the EventLoopGroup that’s created will tie each group to a specific thread, further streamlining your asynchronous operations that come in. Think of it like an upgraded EventLoopGroup.
 
-![Default-aligned image](./runLoopGroup.jpg)
+![Default-aligned image](./03-runloop-group.jpg)
 
 ## Setting Up Your Server Project
 Open Terminal and navigate to the root directory of the starter project. Enter the following commands:
@@ -55,7 +55,7 @@ swift package generate-xcodeproj
 open QOTD-NIO.xcodeproj
 ```
 Once Xcode opens, go to the top of the window and, in the scheme selector, select QOTD-NIO and My Mac like so:
-![Default-aligned image](./schemeSelectorStarter.jpg)
+![Default-aligned image](./04-scheme-selector-starter.jpg)
 Build and run the project. At the bottom of the debugger, you should see a single printed message: This server will be… the one!!! If you see this, you’re ready to dive in.
 ## Bootstrapping a Server
 In Xcode, open QuoteServer.swift. This is where you’re going to set up your server to bind to a port.

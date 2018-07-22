@@ -12,10 +12,6 @@ like it's been marked up with tags or formatting instructions. While
 Markdown's syntax has been influenced by ... "
 ---
 ### Philosophy
-
-![Default-aligned image](./salty_egg.jpg)
-
-
 Markdown is intended to be as easy-to-read and easy-to-write as is feasible. We can even use $a + b + c = 10$. but the tradeoff is a higher line-height.
 $$
 a^2 + b^2 = c^2
