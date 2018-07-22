@@ -69,9 +69,9 @@ const Intro = styled.div`
 export default class Sidebar extends Component {
   render() {
     const avatar = this.props.avatar;
-    const name = this.props.info.name;
-    const title = this.props.info.title;
-    const intro = this.props.info.intro;
+    const name = this.props.info.name ;
+    const title = this.props.info.title ;
+    const intro = this.props.info.intro ;
     const githubLink = this.props.info.links.github;
     const linkedinLink = this.props.info.links.github;
     const emailLink = this.props.info.links.github;
@@ -89,7 +89,7 @@ export default class Sidebar extends Component {
             <a href = {emailLink}><IconWrapper><Icon src={email} atl="github" /></IconWrapper></a> 
             <a href = {linkedinLink}><IconWrapper><Icon src={linkedin} atl="github" /></IconWrapper></a>
           </IconGroup>
-          <Menu/>
+          <Menu activeTab={this.props.activeTab} isCH={this.props.isCH}/>
         </ContainerDiv>
       </OuterDiv>
     )

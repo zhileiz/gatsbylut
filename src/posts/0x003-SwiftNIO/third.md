@@ -4,7 +4,7 @@ date: "2018-03-21"
 subtitle: "This is a subtitle"
 link: "0x003-swiftnio"
 category: "iOS"
-lang: 'english'
+lang: 'en'
 published: false
 summary: "Mobile developers often work with REST APIs or other networking protocols in their applications — whether it’s to retrieve data, communicate with other devices, or something else. SwiftNEO, written by Apple, is a low-level networking framework that ..."
 ---

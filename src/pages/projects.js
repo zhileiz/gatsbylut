@@ -8,7 +8,7 @@ import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
 const ProjectsPage = ({data}) => (
   <ContentDiv>
-    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info}/>
+    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} activeTab="/projects" isCH={false}/>
     <MainDiv>
       <ContainerDiv>
         <div>

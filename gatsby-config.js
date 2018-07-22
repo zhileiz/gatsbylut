@@ -11,6 +11,16 @@ module.exports = {
         linkedin: 'https://github.com/zhileiz',
         email: 'https://github.com/zhileiz'
       }
+    },
+    chInfo: {
+      name: '郑智镭',
+      title: '软件工程师',
+      intro: "我知道的是阿里巴巴旗下的闲鱼技术团队。闲鱼是国内最早几个使用 Flutter 开发的 App。他们还写一组系列文章，介绍 Flutter 的使用感想和开发经验。",
+      links: {
+        github: 'https://github.com/zhileiz',
+        linkedin: 'https://github.com/zhileiz',
+        email: 'https://github.com/zhileiz'
+      }
     }
   },
   plugins: [

@@ -8,9 +8,9 @@ import Sidebar from '../components/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 
-const IndexPage = ({data}) => (
+const IndexCHPage = ({data}) => (
   <ContentDiv>
-    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} activeTab="/" isCH={false}/>
+    <Sidebar avatar={data.avatar} info={data.site.siteMetadata.chInfo} activeTab="/ch" isCH={true}/>
     <MainDiv>
       <ContainerDiv>
         {data.allMarkdownRemark.edges.map(({node}, i) => {
@@ -21,15 +21,15 @@ const IndexPage = ({data}) => (
   </ContentDiv>
 )
 
-export default IndexPage
+export default IndexCHPage
 
 export const query = graphql`
-  query indexQuery {
+  query indexCHQuery {
     site {
       siteMetadata {
         title,
         desc,
-        info {
+        chInfo {
           name
           title
           intro
@@ -46,7 +46,7 @@ export const query = graphql`
       filter: {
         frontmatter: {
           published: { eq: true }
-          lang: {eq: "en"}
+          lang: {eq: "ch"}
         }
       }
     ) {

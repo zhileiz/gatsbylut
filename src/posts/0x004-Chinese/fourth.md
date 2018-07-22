@@ -4,7 +4,7 @@ date: "2018-08-22"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
 link: "0x004-chinese"
 category: "Misc"
-lang: 'chinese'
+lang: 'ch'
 published: true
 summary: "谈到移动端开发，大家心中肯定会涌现出一系列名词：iOS、Android、Weex，H5... 那为何还使用Flutter？其实，Flutter通过自建绘制引擎，具备与Native媲美的性能指数，且有很好的两端一致性，因此Flutter提供了一种新的可选项。闲鱼宝贝详情页实践上线也证明了这点，可以在性能无损前提下降低iOS&Android开发成本。"
 ---

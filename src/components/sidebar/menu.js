@@ -17,15 +17,56 @@ const MenuListItem = styled.div`
 `
 
 export default class Menu extends Component {
+
+  _handleClick(menuItem) { 
+    this.setState({ active: menuItem });
+  }
+
   render() {
+
+    const activeStyle = { fontWeight: 900, borderBottom: "1px solid black", paddingBottom: 2 };
+    const currTab = this.props.activeTab;
+
+    const pages = this.props.isCH ? [
+      '/ch',
+      '/about-ch',
+      '/projects-ch',
+      '/contact-ch',
+      '/',
+    ] : [
+      '/',
+      '/about',
+      '/projects',
+      '/contact',
+      '/ch',   
+    ];
+
+    const pageNames = this.props.isCH ? [
+      '博客',
+      '关于我',
+      '项目',
+      '联系我',
+      'English'
+    ] : [
+      'Blog',
+      'About Me',
+      'Projects',
+      'Contact',
+      '中文'
+    ];
+
     return (
       <MenuList>
-        <MenuListItem><Link to = '/'>Blog</Link></MenuListItem>
-        <MenuListItem><Link to = '/about'>About Me</Link></MenuListItem>
-        <MenuListItem><Link to = '/projects'>Projects</Link></MenuListItem>         
-        <MenuListItem><Link to = '/contact'>Contact</Link></MenuListItem>
-        <MenuListItem><Link to = '/contact'>中文</Link></MenuListItem>
+        {pages.map((path, i) => {
+          return (
+          <MenuListItem key={i}>
+            <Link to = {path} style={path === currTab ? activeStyle : {}}>
+              {pageNames[i]}
+            </Link>
+          </MenuListItem>)
+        })}
       </MenuList>
     )
+
   }
 }
