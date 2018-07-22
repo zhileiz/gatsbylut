@@ -27,7 +27,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`, 
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -50,6 +49,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -64,6 +64,12 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+            },
+          },
+          {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: "language-",
@@ -77,13 +83,7 @@ module.exports = {
             options: {
               offsetY: `20`,
             },
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 900,
-            },
-          },
+          }
         ],
       },
     },
