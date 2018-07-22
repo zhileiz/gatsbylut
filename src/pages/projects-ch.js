@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-import Sidebar from '../components/sidebar'
+import Sidebar from '../components/sidebar/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 

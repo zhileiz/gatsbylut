@@ -1,7 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
-import Img from 'gatsby-image'
-import {MasonryLayout, MasonryImg, MasonryCounter} from '../components/Masonry'
+import {MasonryLayout, MasonryImg, MasonryCounter} from '../components/masonry'
 
 const today = 21;
 

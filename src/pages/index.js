@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import PostItem from '../components/postItem'
-import Sidebar from '../components/sidebar'
+import Sidebar from '../components/sidebar/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 

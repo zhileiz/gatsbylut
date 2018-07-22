@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import PostItem from '../components/postItem'
-import Sidebar from '../components/sidebar'
+import Sidebar from '../components/sidebar/sidebar'
 
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 

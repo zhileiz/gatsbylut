@@ -3,11 +3,11 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
 
-import github from '../images/github.svg'
-import linkedin from '../images/linkedin.svg'
-import email from '../images/email.svg'
+import github from '../../images/github.svg'
+import linkedin from '../../images/linkedin.svg'
+import email from '../../images/email.svg'
 
-import Menu from './sidebar/menu'
+import Menu from './menu'
 
 const OuterDiv = styled.div`
   width: 30%;
