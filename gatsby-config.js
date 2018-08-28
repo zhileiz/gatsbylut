@@ -9,10 +9,10 @@ module.exports = {
       title: 'Junior',
       titleLink: '@UPenn-NETS',
       titleLinkURL: 'https://www.nets.upenn.edu/',
-      title2: 'Developer',
+      title2: 'Software Engineer',
       title2Link: '@Pennlabs',
       title2LinkURL: 'https://pennlabs.org/',
-      intro: "A Markdown-formatted document should be publishable as-is, as plain text, without looking like it's been marked up with tags or formatting instructions. While Markdown's syntax has been influenced by several existing text-to-HTML filters.",
+      intro: "I build beautiful, scalable, and performant software for the web and the mobile world.",
       links: {
         github: 'https://github.com/zhileiz',
         linkedin: 'https://github.com/zhileiz',

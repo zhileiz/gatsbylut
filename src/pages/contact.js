@@ -42,7 +42,7 @@ export const query = graphql`
         }
       }
     }
-    avatar: imageSharp(id: {regex: "/photo.jpg/"}) {
+    avatar: imageSharp(id: {regex: "/avatar.jpg/"}) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
