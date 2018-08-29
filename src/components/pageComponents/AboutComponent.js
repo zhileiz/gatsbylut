@@ -29,7 +29,7 @@ const ExpTitle = styled.h4`
 `
 
 
-const AboutComponent = ({post}) => (
+export const AboutComponent = ({post}) => (
   <div>
     <Title>Currently</Title>
     <List>
@@ -60,7 +60,6 @@ const AboutComponent = ({post}) => (
       <li>Used Ajax to fetch data and refresh heatmap and graphs every 1 minute.</li>
     </List>
   </div>
-
 )
 
 export default AboutComponent

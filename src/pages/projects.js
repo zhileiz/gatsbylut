@@ -9,7 +9,7 @@ const ProjectsPage = ({data}) => (
     <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} activeTab="/projects" isCH={false}/>
     <MainDiv>
       <ContainerDiv>
-        <ProjectsComponent data={data.site.siteMetadata.projects} pictures={data.allFile.edges}/>
+        <ProjectsComponent data={data.site.siteMetadata.projects}/>
       </ContainerDiv>
     </MainDiv>
   </ContentDiv>
@@ -48,20 +48,6 @@ export const query = graphql`
     avatar: imageSharp(id: {regex: "/avatar.jpg/"}) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
-      }
-    }
-    allFile(
-      filter: {sourceInstanceName: {eq: "projectimgs"}}
-      sort: {fields: [id], order: ASC}
-    ) {
-      edges {
-        node {
-          childImageSharp {
-            sizes(maxWidth: 600) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
       }
     }
   }

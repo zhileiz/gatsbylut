@@ -56,6 +56,27 @@ module.exports = {
           "Integrated Amazon S3 for storing user avatar and recipe pictures."
         ]
       }
+    ],
+    chprojects: [
+      {
+        title: "PennMobile - 宾大校园生活app（iOS）",
+        points: [
+          "The official UPenn app developed by Pennlabs.",
+          "Implemented laundry room washer/dryer availability lookup feature.",
+          "Enabled push notiﬁcations using Firebase Cloud Messaging.",
+          "Integrated Mapkit and implemented TF-IDF algorithm for building search.",
+        ]
+      },
+      {
+        title: "Recipublic - 食谱分享平台（Web）",
+        points: [
+          "Course project inspired by Facebook and Github. Users may update user profile, add friendship, post and browse recipes, fork and edit recipes.",
+          "Used Node JS and AWS DynamoDB for the backend.",
+          "Implemented user authentication with password encryption.",
+          "Implemented pagerank algorithm for friend recommendations.",
+          "Integrated Amazon S3 for storing user avatar and recipe pictures."
+        ]
+      }
     ]
   },
   plugins: [
