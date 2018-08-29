@@ -59,22 +59,22 @@ module.exports = {
     ],
     chprojects: [
       {
-        title: "PennMobile - 宾大校园生活app（iOS）",
+        title: "PennMobile - 宾大官方校园生活app（iOS）",
         points: [
-          "The official UPenn app developed by Pennlabs.",
-          "Implemented laundry room washer/dryer availability lookup feature.",
-          "Enabled push notiﬁcations using Firebase Cloud Messaging.",
-          "Integrated Mapkit and implemented TF-IDF algorithm for building search.",
+          "作为Pennlabs软件开发组iOS工程师开发此项目",
+          "实现了学校所有宿舍洗衣房洗衣机/烘衣机再App内状态查询的功能",
+          "用Firebase Cloud Messaging实现了向App发送远程通知",
+          "整合Mapkit功能并利用TF-IDF算法实现学校教学楼位置信息查询",
         ]
       },
       {
         title: "Recipublic - 食谱分享平台（Web）",
         points: [
-          "Course project inspired by Facebook and Github. Users may update user profile, add friendship, post and browse recipes, fork and edit recipes.",
-          "Used Node JS and AWS DynamoDB for the backend.",
-          "Implemented user authentication with password encryption.",
-          "Implemented pagerank algorithm for friend recommendations.",
-          "Integrated Amazon S3 for storing user avatar and recipe pictures."
+          "课程期末项目，模仿Facebook和Github。用户可更新个人信息, 加好友, 浏览或添加食谱, 及fork并编辑其他用户的食谱。",
+          "用Node JS和AWS DynamoDB数据库作为项目后端。",
+          "实现了加密后的用户登陆验证。",
+          "实现了Pagerank算法用于好友及内容推荐，并在Amazon EMR上运行。",
+          "整合了Amazon S3用于存储用户头像和图片内容。"
         ]
       }
     ]

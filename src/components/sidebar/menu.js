@@ -53,9 +53,9 @@ export default class Menu extends Component {
     ];
 
     const pageNames = this.props.isCH ? [
-      '博客', '关于我', '项目', '联系我', 'English'
+      '我的博客', '自我介绍', '项目经历', '与我联系', 'English'
     ] : [
-      'Blog', 'About Me', 'Projects', 'Contact', '中文'
+      'Blog', 'About', 'Projects', 'Contact', '中文'
     ];
 
     return (
