@@ -2,6 +2,7 @@ import React from 'react'
 
 import Sidebar from '../components/sidebar/sidebar'
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
+import ContactComponent from '../components/pageComponents/ContactComponent'
 
 const ContactPage = ({data}) => (
   <ContentDiv>
@@ -11,6 +12,7 @@ const ContactPage = ({data}) => (
         <div>
           <h1>Contact</h1>
         </div>
+        <ContactComponent/>
       </ContainerDiv>
     </MainDiv>
   </ContentDiv>
