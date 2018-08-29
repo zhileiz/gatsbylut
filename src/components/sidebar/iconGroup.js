@@ -55,11 +55,10 @@ export default class IconGroup extends Component {
     const {github, email, linkedin, rss} = this.props.links;
     return (
       <IconGroupWrapper>
-        {/* <p>{links.linkedin}</p> */}
-        <a href = {github}><IconWrapper><Icon src={githubIcon} atl="github" /></IconWrapper></a>
-        <a href = {email}><IconWrapper><Icon src={emailIcon} atl="github" /></IconWrapper></a> 
-        <a href = {linkedin}><IconWrapper><Icon src={linkedinIcon} atl="github" /></IconWrapper></a>
-        <a href = {rss}><IconWrapper><Icon src={rssIcon} atl="github" /></IconWrapper></a>
+        <a href = {github} target="_blank"><IconWrapper><Icon src={githubIcon} atl="github" /></IconWrapper></a>
+        <a href = {"mailto:" + email} target="_blank"><IconWrapper><Icon src={emailIcon} atl="github" /></IconWrapper></a> 
+        <a href = {linkedin} target="_blank"><IconWrapper><Icon src={linkedinIcon} atl="github" /></IconWrapper></a>
+        <a href = {rss} target="_blank"><IconWrapper><Icon src={rssIcon} atl="github" /></IconWrapper></a>
       </IconGroupWrapper>
     )
   }

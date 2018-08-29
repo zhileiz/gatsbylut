@@ -12,11 +12,11 @@ module.exports = {
       title2: 'Software Engineer',
       title2Link: '@Pennlabs',
       title2LinkURL: 'https://pennlabs.org/',
-      intro: "I build beautiful, scalable, and performant software for the web and the mobile world.",
+      intro: "Build scalable, beautiful, and performant software for the web and the mobile world. Prepare for all software challenges of tomorrow.",
       links: {
         github: 'https://github.com/zhileiz',
-        linkedin: 'https://github.com/zhileiz',
-        email: 'https://github.com/zhileiz',
+        email: 'zhileiz@seas.upenn.edu',
+        linkedin: 'https://www.linkedin.com/in/zhileiz/',
         rss: 'https://zhileiz.com/rss.xml'
       }
     },
@@ -28,12 +28,12 @@ module.exports = {
       title2: '开发者',
       title2Link: '@Pennlabs',
       title2LinkURL: 'https://pennlabs.org/',
-      intro: "我知道的是阿里巴巴旗下的闲鱼技术团队。闲鱼是国内最早几个使用 Flutter 开发的 App。他们还写一组系列文章，介绍 Flutter 的使用感想和开发经验。",
+      intro: "为网络和移动的世界搭建可伸缩、高颜值、高性能的应用和服务。为一切明天的软件挑战时刻准备着。",
       links: {
         github: 'https://github.com/zhileiz',
-        linkedin: 'https://github.com/zhileiz',
-        email: 'https://github.com/zhileiz',
-        rss: 'https://zhileiz.com/rss.xml'
+        rss: 'https://zhileiz.com/rss.xml',
+        email: 'zhileiz@seas.upenn.edu',
+        linkedin: 'https://www.linkedin.com/in/zhileiz/'
       }
     }
   },
