@@ -42,6 +42,7 @@ export const query = graphql`
         projects {
           title
           points
+          link
         }
       }
     }

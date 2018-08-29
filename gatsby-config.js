@@ -39,6 +39,7 @@ module.exports = {
     projects: [
       {
         title: "PennMobile - Campus Life Assistant App (iOS)",
+        link:"https://itunes.apple.com/us/app/pennmobile/id944829399?mt=8",
         points: [
           "The official UPenn app developed by Pennlabs.",
           "Implemented laundry room washer/dryer availability lookup feature.",
@@ -48,6 +49,7 @@ module.exports = {
       },
       {
         title: "Recipublic - Recipe Sharing Platform (Web)",
+        link: "https://recipublic.herokuapp.com/",
         points: [
           "Course project inspired by Facebook and Github. Users may update user profile, add friendship, post and browse recipes, fork and edit recipes.",
           "Used Node JS and AWS DynamoDB for the backend.",
@@ -60,6 +62,7 @@ module.exports = {
     chprojects: [
       {
         title: "PennMobile - 宾大官方校园生活app（iOS）",
+        link:"https://itunes.apple.com/us/app/pennmobile/id944829399?mt=8",
         points: [
           "作为Pennlabs软件开发组iOS工程师开发此项目",
           "实现了学校所有宿舍洗衣房洗衣机/烘衣机再App内状态查询的功能",
@@ -69,6 +72,7 @@ module.exports = {
       },
       {
         title: "Recipublic - 食谱分享平台（Web）",
+        link: "https://recipublic.herokuapp.com/",
         points: [
           "课程期末项目，模仿Facebook和Github。用户可更新个人信息, 加好友, 浏览或添加食谱, 及fork并编辑其他用户的食谱。",
           "用Node JS和AWS DynamoDB数据库作为项目后端。",

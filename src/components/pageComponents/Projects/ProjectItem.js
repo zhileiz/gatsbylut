@@ -20,7 +20,7 @@ const List = styled.ul`
 
 const ProjectItem = ({project}) => (
   <div>
-    <Title>{project.title}</Title>
+    <Title><a href={project.link}>{project.title}</a></Title>
     <List style={{marginBottom: '5px'}}>
       {project.points.map((node, i) => {
         return <li key={i}>{node}</li>

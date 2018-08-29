@@ -32,9 +32,9 @@ export const AboutCHComponent = ({post}) => (
     <div>
       <Title>目前状况</Title>
       <List>
-        <li>美国宾夕法尼亚大学网络系统工程专业大三学生</li>
-        <li>宾大Ruby后端开发课程助教</li>
-        <li>Pennlabs软件开发组iOS工程师</li>
+        <li>美国宾夕法尼亚大学<a href="https://www.nets.upenn.edu/">网络系统工程专业</a>大三学生</li>
+        <li>宾大<a href="https://www.seas.upenn.edu/~cis196/">CIS-196</a>：Ruby后端开发课程助教</li>
+        <li><a href="https://pennlabs.org/">Pennlabs</a>软件开发组iOS工程师</li>
       </List>
       <Title>技术能力</Title>
       <List>

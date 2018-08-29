@@ -74,6 +74,29 @@ const EndLine = styled.div`
   display: inline-block;
 `
 
+const BackButton = styled.div`
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  a {
+    font-family: 'Chivo', 'Hans';
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #26a69a;
+  }
+`
+
+const getBackPage = (lang) => {
+  if (lang === 'en') {
+    return "/"
+  } else {
+    return "/ch"
+  }
+}
+
 export default class PostPage extends Component {
   render() {
     const {data} = this.props;
@@ -87,6 +110,7 @@ export default class PostPage extends Component {
           <Markdown dangerouslySetInnerHTML = {{__html: data.markdownRemark.html}}></Markdown>
           <EndLine></EndLine>
         </div>
+        <BackButton><a href={getBackPage(data.markdownRemark.frontmatter.lang)}>Back</a></BackButton>
       </div>
     )
   }
@@ -103,6 +127,7 @@ export const query = graphql`
       frontmatter{
         summary
         title
+        lang
         date(formatString: "MMMM DD, YYYY")
       }
     }

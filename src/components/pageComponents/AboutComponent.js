@@ -33,9 +33,9 @@ export const AboutComponent = ({post}) => (
   <div>
     <Title>Currently</Title>
     <List>
-      <li>Junior at University of Pennsylvania studying CIS/NETS</li>
-      <li>Teaching Assistant for UPenn CIS-196: Ruby on Rails</li>
-      <li>Software Engineer at Pennlabs</li>
+      <li>Junior at University of Pennsylvania studying <a href="https://www.nets.upenn.edu/">CIS/NETS</a></li>
+      <li>Teaching Assistant for UPenn <a href="https://www.seas.upenn.edu/~cis196/">CIS-196</a>: Ruby on Rails</li>
+      <li>Software Engineer at <a href="https://pennlabs.org/">Pennlabs</a></li>
     </List>
     <Title>Skills</Title>
     <List>
@@ -45,14 +45,14 @@ export const AboutComponent = ({post}) => (
       <li>Other skills: Prototyping with Sketch and InvisionApp</li>
     </List>
     <Title>Exprience</Title>
-    <ExpTitle>RED City (Xiaohongshu) · Mobile Engineer · 2018.5 - 2018.8</ExpTitle>
+    <ExpTitle><a href="https://www.crunchbase.com/organization/xiaohongshu">RED City (Xiaohongshu)</a> · Mobile Engineer · 2018.5 - 2018.8</ExpTitle>
     <List>
       <li>Implemented homepage feed UI with Texture(AsyncDisplayKit) for iOS</li>
       <li>Optimized image preloading and managed image decoding operations by reimplementing Texture's ASImageDownloaderProtocol.</li>
       <li>Optimized feed scrolling performance for Android by replacing TextViews with asynchronously rendered StaticLayouts.</li>
       <li>Built gesture-aware animations for scrolling events, and raised global engagement and by 2%.</li>
     </List>
-    <ExpTitle>China Unicom · Frontend/Data Engineer · 2017.5 - 2017.8</ExpTitle>
+    <ExpTitle><a href="https://www.crunchbase.com/organization/china-unicom">China Unicom</a> · Frontend/Data Engineer · 2017.5 - 2017.8</ExpTitle>
     <List>
       <li>Built a real-time city population analytics dashboard with JavaScript.</li>
       <li>Created a heatmap by projecting 1km * 1km grids onto the map and assign colors based on real-time data.</li>
