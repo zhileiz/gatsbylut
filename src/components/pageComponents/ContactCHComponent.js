@@ -40,7 +40,7 @@ const ContactCHComponent = ({post}) => (
             <div className="formInnerLine">
                 <div className="nameLine">
                     <label>您的姓名:</label>
-                    <input type="text" name="name" required/> <br/>
+                    <input type="text" name="EMAIL" required/> <br/>
                 </div>
                 <div className="emailLine">
                     <label>您的邮箱:</label>
@@ -49,11 +49,11 @@ const ContactCHComponent = ({post}) => (
             </div>
             <div>
                 <label>信息主题:</label>
-                <input type="text" name="_replyto" required/><br/>
+                <input type="text" name="TOPIC" required/><br/>
             </div>
             <div>
                 <label>您的信息:</label>
-                <input type="text" name="_replyto" required/><br/>
+                <input type="text" name="CONTENT" required/><br/>
             </div>
             <div className="centerizer">
                 <input type="submit" value="发送" className="submitter"/>

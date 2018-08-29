@@ -41,7 +41,7 @@ const ContactComponent = ({post}) => (
             <div className="formInnerLine">
                 <div className="nameLine">
                     <label>Your Name:</label>
-                    <input type="text" name="name" required/> <br/>
+                    <input type="text" name="NAME" required/> <br/>
                 </div>
                 <div className="emailLine">
                     <label>Your Email:</label>
@@ -50,11 +50,11 @@ const ContactComponent = ({post}) => (
             </div>
             <div>
                 <label>What is your topic today?</label>
-                <input type="text" name="_replyto" required/><br/>
+                <input type="text" name="TOPIC" required/><br/>
             </div>
             <div>
                 <label>Your Message</label>
-                <input type="text" name="_replyto" required/><br/>
+                <input type="text" name="CONTENT" required/><br/>
             </div>
             <div className="centerizer">
                 <input type="submit" value="Send" className="submitter"/>
