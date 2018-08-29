@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import styled from 'styled-components'
 
 import './material/materialize.css'
-import './material/materialize.js'
 
 const FormDiv = styled.form`
     .formInnerLine {
