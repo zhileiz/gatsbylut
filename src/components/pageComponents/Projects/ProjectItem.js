@@ -6,21 +6,26 @@ const Title = styled.h3`
     font-size: 20px;
     margin: 0px;
     margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
     color: black;
 `
 
-const Point = styled.li`
-    margin-bottom: 0.2rem;
+const List = styled.ul`
+  li {
+    margin-bottom: 0.3rem;
+    margin-top: 0rem;
+  }
+  margin-bottom: 1.2rem;
 `
 
 const ProjectItem = ({project}) => (
   <div>
     <Title>{project.title}</Title>
-    <ul style={{marginBottom: '5px'}}>
+    <List style={{marginBottom: '5px'}}>
       {project.points.map((node, i) => {
-        return <Point key={i}>{node}</Point>
+        return <li key={i}>{node}</li>
       })}
-    </ul>
+    </List>
     
   </div>
 )

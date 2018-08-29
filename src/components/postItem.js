@@ -15,13 +15,14 @@ const Title = styled.div`
     color: black;
     text-decoration: none;
   }
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 `
 
 const Excerpt = styled.div`
   p {
     font-family: 'Muli', 'Hans';
     font-size: 15px;
+    margin-bottom: 0px;
   }
   a {
     font-family: 'Muli', 'Hans';
@@ -32,7 +33,7 @@ const Excerpt = styled.div`
 `;
 
 const MetaArea = styled.div`
-  margin-bottom: 5px;
+  margin-bottom: 0.3rem;
   font-family: 'Muli', 'Hans';
   font-size: 13px;
   color: #666;
@@ -50,7 +51,7 @@ const CategoryInfo = styled.div`
 `
 
 const PostItem = ({post}) => (
-  <div>
+  <div style={{margin: '0px', marginBottom: '2rem'}}>
     <Title>
       <Link to={post.frontmatter.link}>
         <h3>{post.frontmatter.title}</h3>

@@ -1,17 +1,25 @@
 import React from 'react'
-
+import styled from 'styled-components'
 import Sidebar from '../components/sidebar/sidebar'
 import {ContentDiv, MainDiv, ContainerDiv} from '../components/foundation'
 import ContactComponent from '../components/pageComponents/ContactComponent'
+
+const Title = styled.h3`
+    font-family: 'Chivo', 'Hans';
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+    color: black;
+`
 
 const ContactPage = ({data}) => (
   <ContentDiv>
     <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} activeTab="/contact" isCH={false}/>
     <MainDiv>
       <ContainerDiv>
-        <div>
-          <h1>Contact</h1>
-        </div>
+        <Title>Contact Me</Title>
+        You may find me on linkedin or github with the username "zhileiz". Also, you may shoot me an email at zhileiz@seas.upenn.edu, or send me a direct message below:
         <ContactComponent/>
       </ContainerDiv>
     </MainDiv>

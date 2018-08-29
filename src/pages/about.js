@@ -9,10 +9,7 @@ const AboutPage = ({data}) => (
     <Sidebar avatar={data.avatar} info={data.site.siteMetadata.info} activeTab="/about" isCH={false}/>
     <MainDiv>
       <ContainerDiv>
-        <div>
-          <h1>About</h1>
-          <AboutComponent/>
-        </div>
+        <AboutComponent/>
       </ContainerDiv>
     </MainDiv>
   </ContentDiv>

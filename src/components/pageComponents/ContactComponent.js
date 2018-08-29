@@ -16,18 +16,22 @@ const FormDiv = styled.form`
         .emailLine {
             width: 65%;
         }
+        margin-top: 1.5rem;
     }
     .submitter {
-        padding: 10px 0px;
+        padding: 15px 0px;
         border: none;
         background: none;
-        font-size: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-weight: 500;
+        font-size: 1rem;
         color: #666666;
     }
     .submitter:hover {
         color: #26a69a;
+    }
+    .centerizer {
+        width: 100%;
+        text-align: center;
     }
 `;
 
@@ -52,7 +56,9 @@ const ContactComponent = ({post}) => (
                 <label>Your Message</label>
                 <input type="text" name="_replyto" required/><br/>
             </div>
-            <input type="submit" value="Send" className="submitter"/>
+            <div className="centerizer">
+                <input type="submit" value="Send" className="submitter"/>
+            </div>
         </FormDiv>
     </div>
 )

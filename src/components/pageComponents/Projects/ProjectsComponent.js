@@ -5,9 +5,8 @@ import Img from 'gatsby-image'
 const ProjectsComponent = ({data, pictures}) => (
   <div>
     {data.map((node, i) => {
-        return <div style={{marginBottom: '25px'}}>
+        return <div style={{marginBottom: '1.5rem'}}>
             <ProjectItem project={node}/>
-            <Img style={{width: '100%'}} sizes={pictures[i].node.childImageSharp.sizes}/> 
         </div>
     })}
   </div>
