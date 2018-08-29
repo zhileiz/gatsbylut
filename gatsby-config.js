@@ -12,7 +12,7 @@ module.exports = {
       title2: 'Software Engineer',
       title2Link: '@Pennlabs',
       title2LinkURL: 'https://pennlabs.org/',
-      intro: "Build scalable, beautiful, and performant software for the web and the mobile world. Prepare for all software challenges of tomorrow.",
+      intro: "To build scalable, beautiful, and performant software for the web and the mobile world. To tackle all software challenges of tomorrow.",
       links: {
         github: 'https://github.com/zhileiz',
         email: 'zhileiz@seas.upenn.edu',

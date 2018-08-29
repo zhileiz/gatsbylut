@@ -66,7 +66,7 @@ const PostItem = ({post}) => (
       </CategoryInfo>
     </MetaArea>
     <Excerpt>
-      <p>{post.frontmatter.summary}<Link to={post.frontmatter.link}>MORE</Link></p>
+      <p>{post.frontmatter.summary}<Link to={post.frontmatter.link}> MORE</Link></p>
     </Excerpt>
   </div>
 )

@@ -6,7 +6,7 @@ link: "en-introduction-to-concurrency"
 category: "iOS"
 lang: 'en'
 published: true
-summary: "How should we understand concurrency?"
+summary: "Concurrency is a big, useful, but confusing topic. How should we understand concurrency? What is async? What is multithreading? Where do threads come from? This article aims to answer these questions.  "
 ---
 As developers, we all know that concurrency and parallelism matters. Without concurrency, expensive operations would block the user interface, and be detrimental to the overall user experience. But often times, questions are raised: 
 

@@ -6,7 +6,7 @@ link: "en-introduction-to-texture"
 category: "iOS"
 lang: 'en'
 published: true
-summary: "How should we understand texture?"
+summary: "Texture (a.k.a AsyncDisplayKit) is an iOS framework for building smooth and responsive UI. Though mature, it is a little daunting to first-time users. This article aims to give a gentle introduction. "
 ---
 
 Texture (a.k.a AsyncDisplayKit) is an iOS framework for smooth and responsive interfaces. It's main promise is making user interfaces thread safe. This means that the measuring and rendering of UI elements can now happen on background threads concurrently. The result: 
