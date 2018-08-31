@@ -45,7 +45,7 @@ In terms of implementation, this form of execution is called "synchronous execut
 #### A. Synchronous execution (is not concurrency)
 The hallmark of **synchronous** execution is that different operations have absolutely no overlap between their execution timespans. No operation ends after another operation starts, as illustrated below: 
 
-![](media/15349647751963/15350287282567.jpg)
+![](1.jpg)
 
 No matter how long operation 1 takes, operation 2 will always start only after operation 1 finishes. 
 
@@ -64,7 +64,7 @@ With synchronous operation, *line 2* would execute only after *line 1* has finis
 
 Obviously, the simplest optimization one could think of is firing ```b = b - 1``` right after ```a = a + 1```. However, this means starting the execution of *line 3* **before** the finish of *line 1* -- this is the core idea behind **asynchronous** execution, that one operation can start before the completion of another:
 
-![](media/15349647751963/15350305442941.jpg)
+![](2.jpg)
 
 
 How can a computer do this? One may ask. 
@@ -98,7 +98,7 @@ What he could do instead, is hire a **helper**. After all, massaging the meat or
 
 This is the idea of **multithreading**: having different workers (threads) work on different tasks simultaneously.
 
-![](media/15349647751963/15350345845012.jpg)
+![](3.jpg)
 
 ### 3. Wait ... What?
 
@@ -117,7 +117,7 @@ From a user's point of view, we first have to understand processes. **Processes*
 
 Now, **threads belong to processes**. Each process have at least 1 thread (the main thread). "Thread" is in fact a visualized term, the real way to understand it is that it's just a sequence of executable operations. That is, each process may have a number of sequences of operations
 
-![](media/15349647751963/15350389548377.jpg)
+![](4.jpg)
 
 
 The real significance of having different sequences of operations (threads) is in **context switching**. Modern operating systems are able to switch between threads. The switching happens so fast and frequently, that to the eye of users, it appears that the computer can do 1000 things at the same time, even though deep down it is only doing 3 or 4 at the same time.

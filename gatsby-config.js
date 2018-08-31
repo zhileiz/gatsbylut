@@ -133,6 +133,7 @@ module.exports = {
             options: {
               maxWidth: 600,
               linkImagesToOriginal: false,
+              sizeByPixelDensity:	true
             },
           },
           "gatsby-remark-copy-linked-files",

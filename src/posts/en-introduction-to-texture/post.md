@@ -191,7 +191,7 @@ There are 3 ranges of interface states:
 |Visible|The node is onscreen by at least one pixel.|
 
 This is most useful in UIs that involve scrolling. As is illustrated below:
-![](media/15350850423369/15350999265535.jpg)
+![](texture-1.jpg)
 
 With these interface states, the app knows what content to preload and what components to pre-render. When the user scroll too fast, the app would also know what contents to quit working on, and move on to load content of higher priorities.
 
@@ -280,7 +280,7 @@ Simple, right? Here, we are using an ```ASInsetLayoutSpec``` which is a subclass
 #### ASStackLayoutSpec and CSS Flexbox
 
 Arguably the most important layout spec is ASStackLayout, which is heavily inspired by CSS Flexbox. We use ASStackLayoutSpec in any situations where UI components are positioned in vertical or horizontal arrays.
-![](http://texturegroup.org/static/images/layout-examples-simple-header-with-left-right-justified-text-diagram.png)
+![](texture-2.jpg)
 The usage and API of ASStackLayout mimics that of CSS Flexbox. First we declare the direction of the stack:
 ```swift
 let verticalLayout = ASStackLayout.verticalStackLayoutSpec()

@@ -69,6 +69,41 @@ const Markdown = styled.div`
     padding-top: 0.1rem;
     padding-bottom: 0.3rem;
   }
+  table {
+    padding: 0; 
+    margin: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+  }
+  table tr {
+    border-top: 1px solid #999999;
+    background-color: transparent;
+    margin: 0;
+    padding: 0; 
+  }
+  table tr:nth-child(2n) {
+    background-color: #e1e1e1; 
+  }
+  table tr th {
+    font-weight: bold;
+    border: 1px solid #999999;
+    text-align: center;
+    margin: 0;
+    padding: 6px 13px; 
+  }
+  table tr td {
+    border: 1px solid #999999;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px; 
+  }
+  table tr th :first-child, table tr td :first-child {
+    margin-top: 0; 
+  }
+  table tr th :last-child, table tr td :last-child {
+    margin-bottom: 0; 
+  }
 `
 
 const EndLine = styled.div`
