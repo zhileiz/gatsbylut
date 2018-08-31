@@ -1,5 +1,5 @@
 ---
-title: "Confusing Concepts of Concurrency"
+title: "Confusing Concepts in Concurrency"
 date: "2018-07-30"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
 link: "en-introduction-to-concurrency"
