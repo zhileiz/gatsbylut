@@ -50,15 +50,31 @@ const IconWrapper = styled.div`
   `}
 `
 
+const rssStyle = {
+  background: "linear-gradient(45deg, #ff7b0d 0%,#ffa84c 100%)" 
+}
+
+const linkedinStyle = {
+  background: "linear-gradient(45deg, #0077b5 0%,#49c0f0 100%)"
+}
+
+const gmailStyle = {
+  background: "linear-gradient(45deg, #b31217 0%,#e52d27 100%)"
+}
+
+const githubStyle = {
+  background: "linear-gradient(45deg, #0e0e0e 0%,#7d7e7d 99%)"
+}
+
 export default class IconGroup extends Component {
   render() {
     const {github, email, linkedin, rss} = this.props.links;
     return (
       <IconGroupWrapper>
-        <a href = {github} target="_blank"><IconWrapper><Icon src={githubIcon} atl="github" /></IconWrapper></a>
-        <a href = {"mailto:" + email} target="_blank"><IconWrapper><Icon src={emailIcon} atl="github" /></IconWrapper></a> 
-        <a href = {linkedin} target="_blank"><IconWrapper><Icon src={linkedinIcon} atl="github" /></IconWrapper></a>
-        <a href = {rss} target="_blank"><IconWrapper><Icon src={rssIcon} atl="github" /></IconWrapper></a>
+        <a href = {github} target="_blank"><IconWrapper style={githubStyle}><Icon src={githubIcon} atl="github" /></IconWrapper></a>
+        <a href = {"mailto:" + email} target="_blank"><IconWrapper style={gmailStyle}><Icon src={emailIcon} atl="github" /></IconWrapper></a> 
+        <a href = {linkedin} target="_blank"><IconWrapper style={linkedinStyle}><Icon src={linkedinIcon} atl="github" /></IconWrapper></a>
+        <a href = {rss} target="_blank"><IconWrapper style={rssStyle}><Icon src={rssIcon} atl="github" /></IconWrapper></a>
       </IconGroupWrapper>
     )
   }
