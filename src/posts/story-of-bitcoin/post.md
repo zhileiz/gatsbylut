@@ -3,7 +3,7 @@ title: "比特币的故事"
 date: "2018-01-05"
 subtitle: "Markdown is intended to be as easy-to-read and easy-to-write as is feasible."
 link: "story-of-bitcoin"
-category: "iOS"
+category: "Misc"
 lang: 'ch'
 published: true
 summary: "在过去的2017， 比特币和其他数字货币（cryptocurrency）火得令人瞠目结舌。上学期有机会在NETS212的课上初识了比特币/区块链作为一种分布式系统的概念，不得不叹服设计出比特币系统的“中本哲史/中本聪”可能真的是神仙下凡。"

@@ -51,6 +51,12 @@ const Markdown = styled.div`
       background: #e0d6eb;
     }
   }
+  .gatsby-resp-image-wrapper {
+    margin: 2rem;
+  }
+  img {
+    margin: 2rem;
+  }
   blockquote {
     color: #999;
     p {
