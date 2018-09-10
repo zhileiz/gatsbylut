@@ -129,6 +129,13 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-plugin-hotjar`,
+            options: {
+              id: 1009734,
+              sv: 6
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
