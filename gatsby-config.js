@@ -136,6 +136,12 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "UA-125566905-1"
+            },
+          },
+          {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
